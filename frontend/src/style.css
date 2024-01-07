@@ -1,0 +1,1006 @@
+ @font-face {
+   font-family: "WorkSans";
+   src: url("./assets/Fonts/WorkSans-Bold.woff2") format('woff2');
+   font-weight: 700;
+   font-style: normal;
+ }
+
+ @font-face {
+   font-family: "WorkSans";
+   src: url("./assets/Fonts/WorkSans-Regular.woff2") format('woff2');
+   font-weight: 400;
+   font-style: normal;
+ }
+
+ @font-face {
+   font-family: "WorkSans";
+   src: url("./assets/Fonts/WorkSans-Light.woff2") format('woff2');
+   font-weight: 200;
+   font-style: normal;
+ }
+
+
+ @font-face {
+   font-family: "WorkSans";
+   src: url("./assets/Fonts/WorkSans-SemiBold.woff2") format('woff2');
+   font-weight: 900;
+   font-style: normal;
+ }
+
+ @font-face {
+   font-family: "WorkSans";
+   src: url("./assets/Fonts/WorkSans-Medium.woff2") format('woff2');
+   font-weight: 500;
+   font-style: normal;
+ }
+
+ @font-face {
+   font-family: "Ubuntu";
+   src: url("./assets/Fonts/Ubuntu-Light.woff2") format('woff2');
+   font-weight: 200;
+   font-style: normal;
+ }
+
+ @font-face {
+   font-family: "Ubuntu";
+   src: url("./assets/Fonts/Ubuntu-Medium.woff2") format('woff2');
+   font-weight: 500;
+   font-style: normal;
+ }
+
+ @font-face {
+   font-family: "Ubuntu";
+   src: url("./assets/Fonts/Ubuntu-Regular.woff2") format('woff2');
+   font-weight: 300;
+   font-style: normal;
+ }
+
+ @font-face {
+   font-family: "Ubuntu";
+   src: url("./assets/Fonts/Ubuntu-Bold.woff2") format('woff2');
+   font-weight: 700;
+   font-style: normal;
+ }
+
+ @font-face {
+   font-family: "Roboto";
+   src: url("./assets/Fonts/Roboto-Medium.woff2") format('woff2');
+   font-weight: 500;
+   font-style: normal;
+ }
+
+ :root {
+   --color-black: #000;
+   --color-white: #fff;
+   --color-gray: #999;
+   --color-gray-light: #cacaca;
+ }
+
+ html {
+   box-sizing: border-box;
+   margin: 0 auto;
+ }
+
+ *,
+ *:before,
+ *:after {
+   box-sizing: border-box;
+ }
+
+ *:focus {
+   outline: none;
+ }
+
+ a {
+   color: inherit;
+   text-decoration: none;
+   transition-property: color;
+   transition-duration: 0.3s;
+   transition-timing-function: ease-in-out;
+ }
+
+ img {
+   max-width: 100%;
+ }
+
+ h1,
+ h2,
+ h3 {
+   margin: 0;
+   padding: 0;
+ }
+
+ p {
+   margin: 0;
+   padding: 0;
+ }
+
+ input {
+   margin: 0;
+   padding: 0;
+   border: none;
+ }
+
+ body {
+   left: 0;
+   right: 0;
+   /* font-family: "Open Sans", "Arial", sans-serif; */
+   font-weight: 400;
+   font-style: normal;
+   margin: 0 auto;
+ }
+
+ form {
+   display: block;
+ }
+
+ .listReset {
+   margin: 0;
+   padding: 0;
+   list-style: none;
+ }
+
+ .btnReset {
+   padding: 0;
+   background: inherit;
+   border: none;
+   border-color: transparent;
+   cursor: pointer;
+   outline: none;
+   border: none;
+ }
+
+ .container {
+   max-width: 1440px;
+   width: 100%;
+   padding-left: 50px;
+   padding-right: 50px;
+   margin: 0 auto;
+ }
+
+ .header {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   min-height: 100px;
+   background-color: #116ACC;
+   color: var(--color-white);
+   margin-bottom: 52px;
+ }
+
+ .logo {
+   font-family: "WorkSans", Arial, sans-serif;
+   font-size: 48px;
+   font-style: normal;
+   font-weight: 300;
+   line-height: normal;
+ }
+
+ .enterAcc {
+   font-family: "WorkSans", Arial, sans-serif;
+   font-size: 34px;
+   font-style: normal;
+   font-weight: 700;
+   line-height: normal;
+ }
+
+ .enter {
+   display: flex;
+   position: relative;
+   height: 50vw;
+   justify-content: center;
+   align-items: center;
+   top: -52px;
+ }
+
+ .enterForm {
+   width: 500px;
+   height: 366px;
+   background-color: #F3F4F6;
+   border-radius: 50px;
+   padding: 50px;
+ }
+
+ h1 {
+   text-align: center;
+   margin-bottom: 35px;
+ }
+
+ .accountsTitle {
+   font-family: "WorkSans", Arial, sans-serif;
+   font-size: 34px;
+   font-weight: 700;
+   line-height: normal;
+   letter-spacing: -0.68px;
+   color: #000;
+   text-align: left;
+   margin-bottom: 0;
+   margin-right: 35px;
+ }
+
+ .formLabel {
+   display: block;
+   width: 60px;
+   color: #182233;
+   font-family: "Ubuntu", Arial, sans-serif;
+   font-size: 16px;
+   font-style: normal;
+   font-weight: 500;
+   line-height: 20px;
+   text-align: right;
+   letter-spacing: -0.16px;
+   margin-right: 18px;
+ }
+
+ .currFormLabel {
+   display: block;
+   color: #182233;
+   font-family: "Ubuntu", Arial, sans-serif;
+   font-size: 16px;
+   font-style: normal;
+   font-weight: 500;
+   line-height: 20px;
+   text-align: right;
+   letter-spacing: -0.16px;
+   margin-right: 18px;
+ }
+
+ .enterButton {
+   display: flex;
+   padding: 14px 21px;
+   justify-content: center;
+   align-items: center;
+   margin-left: 80px;
+   border-radius: 7px;
+   background: #116ACC;
+   color: white;
+   font-family: "Ubuntu", Arial, sans-serif;
+   font-weight: 500;
+ }
+
+ .enterButton {
+   display: flex;
+   padding: 14px 21px;
+   justify-content: center;
+   align-items: center;
+   margin-left: 80px;
+   border-radius: 7px;
+   background: #116ACC;
+   color: white;
+   font-family: "Ubuntu", Arial, sans-serif;
+   font-weight: 500;
+ }
+
+ .exchangeButton {
+   display: flex;
+   height: 113px;
+   padding: 14px 21px;
+   justify-content: center;
+   align-items: center;
+   border-radius: 7px;
+   background: #116ACC;
+   color: white;
+   font-family: "Ubuntu", Arial, sans-serif;
+   font-weight: 500;
+ }
+
+ .currForm {
+   display: flex;
+   justify-content: space-between;
+   width: 90%;
+ }
+
+ .currencyBlock {
+   width: 92%;
+   color: #000;
+   font-family: Work Sans;
+   font-size: 20px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: normal;
+   letter-spacing: 2px;
+ }
+
+ .currencyName {
+   display: block;
+   font-weight: 600;
+
+ }
+
+ .currencyDotted {
+   display: block;
+   width: 80%;
+   overflow: hidden;
+ }
+
+ .currencyValue {
+   display: block;
+ }
+
+ .currencyItem {
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 2px;
+ }
+
+
+ .btn:hover {
+   background: linear-gradient(0deg, rgba(255, 255, 255, 0.30) 0%, rgba(255, 255, 255, 0.30) 100%), #116ACC;
+ }
+
+ .btn:active {
+   background: linear-gradient(0deg, rgba(0, 0, 0, 0.30) 0%, rgba(0, 0, 0, 0.30) 100%), #116ACC;
+ }
+
+ .inputEnter {
+   display: block;
+   width: 300px;
+   height: 44px;
+   padding: 8px 10px 8px 16px;
+   border-radius: 7px;
+   border: 1px solid #9CA3AF;
+ }
+
+ .inputError {
+   outline: 1px solid red;
+ }
+
+ .messageError {
+   display: none;
+   position: absolute;
+   top: 45px;
+   left: 90px;
+   width: 350px;
+   color: red;
+   font-size: 11px;
+ }
+
+ .messageErrorAcc {
+   display: none;
+   position: absolute;
+   top: 45px;
+   left: 290px;
+   width: 350px;
+   color: red;
+   font-size: 11px;
+ }
+
+ .messageErrorActive {
+   display: block;
+ }
+
+ .enterWrap {
+   display: flex;
+   position: relative;
+   color: #76CA66;
+   align-items: center;
+   max-width: 510px;
+   margin-bottom: 30px;
+ }
+
+ .containerCurrency {
+   position: relative;
+ }
+
+ .enterWrapCurr {
+   justify-content: flex-end;
+   max-width: none;
+   width: 510px;
+ }
+
+ .enterCurrWrap {
+   display: flex;
+   align-items: center;
+   width: 90%;
+   /* height: 70px; */
+   margin-bottom: 28px;
+ }
+
+ .currWrap {
+   display: flex;
+   align-items: center;
+   height: 40px;
+   margin-right: 20px;
+
+ }
+
+ .courseDataRateContainer {
+   font-weight: 400;
+   margin-right: 20px;
+ }
+
+ .dottedContainer {
+   font-weight: 400;
+   margin-right: 2px;
+ }
+
+ .selectExchange {
+   height: 40px;
+   width: 144px;
+ }
+
+
+ .enterButtonCurr {
+   margin-left: 210px;
+ }
+
+ .accountsList {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+ }
+
+ .account {
+   display: flex;
+   width: 400px;
+   height: 156px;
+   border-radius: 9px;
+   background: #FFF;
+   box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.25);
+   margin-bottom: 50px;
+ }
+
+ .titleBlock {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-bottom: 50px;
+ }
+
+ .accountsTitleWrap {
+   display: flex;
+   align-items: center;
+ }
+
+ .btnTitle {
+   display: flex;
+   align-items: center;
+   font-family: "Ubuntu", Arial, sans-serif;
+   font-size: 16px;
+   font-style: normal;
+   font-weight: 500;
+   letter-spacing: -0.16px;
+   color: white;
+   padding: 16px 24px;
+   border-radius: 7px;
+   background-color: #116ACC;
+ }
+
+ .btnTitlenSymbol {
+   font-size: 24px;
+   margin-right: 12px;
+ }
+
+ .btnTitleText {
+   display: block;
+
+ }
+
+ .buttonNav {
+   font-family: "Ubuntu", Arial, sans-serif;
+   height: 52px;
+   padding: 14px 24px;
+   border-radius: 7px;
+   border: 2px solid #116ACC;
+   background: #FFF;
+   color: #116ACC;
+   font-size: 16px;
+   font-weight: 500;
+   cursor: pointer;
+ }
+
+ .buttonNavActive {
+   background: #A0C3FF;
+ }
+
+
+ .buttonNav:not(:last-child) {
+   margin-right: 25px;
+ }
+
+ .none {
+   display: none;
+ }
+
+ .sort {
+   color: #374151;
+   font-family: "Ubuntu", Arial, sans-serif;
+   font-size: 16px;
+   font-weight: 400;
+   line-height: normal;
+   letter-spacing: -0.16px;
+ }
+
+ .accountsBlock {
+   display: grid;
+   column-gap: 70px;
+   row-gap: 50px;
+   grid-template-columns: repeat(3, 1fr);
+   margin-bottom: 50px;
+ }
+
+ .accountItem {
+   height: 156px;
+   padding: 22px;
+   border-radius: 9px;
+   background: #FFF;
+   box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.25);
+ }
+
+ .accountNumber {
+   color: #182233;
+   font-family: Roboto;
+   font-size: 18px;
+   font-style: normal;
+   font-weight: 500;
+   line-height: 22px;
+   margin-bottom: 10px;
+ }
+
+ .balanceValue {
+   color: #182233;
+   font-family: "Ubuntu", Arial, sans-serif;
+   font-size: 14px;
+   font-weight: 400;
+   line-height: 20px;
+   margin-bottom: 10px;
+ }
+
+ .balanceCurrentText {
+   color: #000;
+   font-family: "WorkSans", Arial, sans-serif;
+   font-size: 20px;
+   font-weight: 700;
+   letter-spacing: -0.4px;
+ }
+
+ .balanceCurrentValue {
+   font-weight: 400;
+ }
+
+ .accountItemWrap {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+ }
+
+ .titleTransaction {
+   display: block;
+   max-width: 195px;
+   font-family: "WorkSans", Arial, sans-serif;
+   color: #000;
+   font-size: 13px;
+   font-style: normal;
+   font-weight: 700;
+   line-height: 14px;
+ }
+
+ .dateTransaction {
+   font-weight: 400;
+ }
+
+ .btnOpen {
+   display: block;
+   width: 110px;
+   height: 50px;
+   padding: 16px 24px;
+   justify-content: center;
+   align-items: center;
+   border-radius: 7px;
+   color: white;
+   background: #116ACC;
+   cursor: pointer;
+ }
+
+ .accountInfo {
+   display: flex;
+   justify-content: space-between;
+ }
+
+ .newTransfer {
+   /* max-width: 606px; */
+   height: 288px;
+   border-radius: 50px;
+   background: #F3F4F6;
+   padding: 25px 50px;
+ }
+
+ .newTransferTitle {
+   font-family: "WorkSans", Arial, sans-serif;
+   font-size: 20px;
+   font-style: normal;
+   font-weight: 700;
+   line-height: normal;
+   letter-spacing: -0.4px;
+   margin-bottom: 25px;
+ }
+
+ .newTransferTitleDyn {
+   margin-bottom: 0;
+ }
+
+ .newTransferTitleCh {
+   margin-bottom: 40px;
+ }
+
+ .currAccountNumber {
+   color: #000;
+   font-family: "WorkSans", Arial, sans-serif;
+   font-size: 34px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: normal;
+   letter-spacing: -0.68px;
+   margin-bottom: 50px;
+ }
+
+ .ulLS {
+   display: block;
+   visibility: hidden;
+   /* visibility: hidden; */
+   position: absolute;
+   top: 50px;
+   right: 50px;
+   background-color: #fff;
+   color: #555;
+   padding: 7px;
+   border: 1px solid #000;
+   border-radius: 8px;
+   z-index: 10;
+ }
+
+ .active {
+   display: block;
+   visibility: visible;
+ }
+
+ .liLS {
+   padding: 2px;
+ }
+
+ .liLS:not(:last-child) {
+   margin-bottom: 3px;
+ }
+
+ .liLS:hover {
+   color: rgb(75, 55, 249);
+   font-weight: 600;
+ }
+
+ .dynBalance {
+
+   position: relative;
+   height: 288px;
+   border-radius: 50px;
+   background: #FFF;
+   box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.25);
+   padding: 25px 50px;
+
+ }
+
+ .dynBalance:nth-child(2) {
+   margin-bottom: 50px;
+ }
+
+
+ .currentAccGrid {
+   display: grid;
+   gap: 30px;
+   row-gap: 50px;
+   grid-template-columns: repeat(2, 1fr);
+ }
+
+ .balanceGrid {
+   display: grid;
+   gap: 30px;
+   row-gap: 50px;
+   grid-template-columns: repeat(1, 1fr);
+ }
+
+ .transHistory {
+   min-height: 288px;
+   border-radius: 50px;
+   background: #F3F4F6;
+   padding: 25px 50px;
+   grid-column: 2 span;
+   margin-bottom: 30px;
+ }
+
+ .transHistoryMod {
+   grid-column: 1 span;
+ }
+
+ .transTable {
+   width: 100%;
+   width: 100%;
+   border-radius: 15px;
+   border-collapse: collapse;
+   background-color: white;
+ }
+
+ tr {
+   height: 64px;
+ }
+
+ th {
+   height: 64px;
+   background: #116ACC;
+   color: white;
+   outline: 1px solid white;
+   margin-bottom: 100px;
+   font-family: "Ubuntu", Arial, sans-serif;
+   font-size: 20px;
+   font-weight: 500;
+   letter-spacing: -0.2px;
+ }
+
+ td {
+   color: #000;
+   font-family: "Ubuntu", Arial, sans-serif;
+   font-family: Ubuntu;
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 24px;
+   letter-spacing: -0.16px;
+   padding-left: 49px;
+ }
+
+ .historyElement {
+   color: #374151;
+   font-family: "Ubuntu", Arial, sans-serif;
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 24px;
+   /* 150% */
+   letter-spacing: -0.16px;
+ }
+
+ .plus {
+   color: hsl(120, 100%, 24%);
+ }
+
+ .minus {
+   color: #FD4E5D;
+ }
+
+ .graph {
+   width: 100% !important;
+   height: 220px !important;
+   margin-top: -10px !important;
+   padding-right: 0 !important;
+
+ }
+
+ .graph2 {
+   width: 100% !important;
+   height: 220px !important;
+   margin-top: -10px !important;
+   padding-right: 0px !important;
+
+ }
+
+ .average {
+   position: absolute;
+   width: 70px;
+   font-family: 'Work Sans', 'Arial';
+   font-size: 19px;
+   font-weight: 500;
+ }
+
+ .pagination {
+   display: flex;
+   max-width: 280px;
+   height: 40px;
+   margin: 0 auto;
+   margin-bottom: 30px;
+   justify-content: center;
+   align-items: center;
+   color: #9CA3AF;
+   font-family: "Ubuntu", Arial, sans-serif;
+   font-size: 17px;
+   font-weight: 700;
+ }
+
+ .page {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 40px;
+   width: 20px;
+   margin-right: 4px;
+   cursor: pointer;
+ }
+
+ .pageNumberActive {
+   width: 40px;
+   border-radius: 7px;
+   background-color: #116ACC;
+   color: #fff;
+ }
+
+ .dotted {
+   cursor: default;
+ }
+
+ .currencyGrid {
+   display: grid;
+   gap: 50px;
+   row-gap: 44px;
+   grid-template-columns: repeat(2, 1fr);
+   margin-bottom: 40px;
+ }
+
+ .yourCurrency {
+   grid-column: 1/1 span;
+   /* grid-row: 1/1 span; */
+   min-height: 411px;
+   /* max-width: 588px; */
+   border-radius: 50px;
+   background: #FFF;
+   box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.25);
+   padding: 25px 50px;
+   padding-right: 0;
+ }
+
+ .dynCourse {
+   display: flex;
+   flex-direction: column;
+   /* justify-content: center; */
+   grid-column: 2/1 span;
+   grid-row: 1/2 span;
+   border-radius: 50px;
+   background: #E5E5E5;
+   padding: 50px 50px;
+
+ }
+
+ .exchangeBlock {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   grid-column: 1/2;
+   /* grid-row: 1/1; */
+   height: 273px;
+   /* max-width: 588px; */
+   border-radius: 50px;
+   background: #FFF;
+   box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.25);
+   padding: 25px 50px;
+   padding-right: 0;
+ }
+
+ .courseData {
+   display: flex;
+   width: 90%;
+   justify-content: space-between;
+   font-family: "WorkSans", Arial, sans-serif;
+   font-size: 17px;
+   font-weight: 600;
+ }
+
+ .signPlus {
+   border-radius: 10px;
+   padding: 10px;
+   position: relative;
+   color: #fff;
+   margin-bottom: 24.5px;
+ }
+
+ .signPlus::after {
+   content: '';
+   position: absolute;
+   left: -15px;
+   bottom: 7px;
+   border: 10px solid transparent;
+   border-bottom: 10px solid green;
+
+ }
+
+ .signMinus {
+   border-radius: 10px;
+   padding: 10px;
+   position: relative;
+   color: #fff;
+   margin-bottom: 25px;
+ }
+
+ .signMinus::after {
+   content: '';
+   position: absolute;
+   left: -15px;
+   bottom: -3px;
+   border: 10px solid transparent;
+   border-top: 10px solid red;
+ }
+
+ .dynElement {
+   margin-bottom: 25px;
+ }
+
+ .dynLoading {
+   position: relative;
+ }
+
+ .loader {
+   position: absolute;
+   top: 150px;
+   left: calc(50% - 50px);
+   width: 100px;
+   height: 100px;
+   border-radius: 50%;
+   perspective: 800px;
+ }
+
+ .inner {
+   position: absolute;
+   box-sizing: border-box;
+   width: 100%;
+   height: 100%;
+   border-radius: 50%;
+ }
+
+ .inner.one {
+   left: 0%;
+   top: 0%;
+   animation: rotate-one 0.5s linear infinite;
+   border-bottom: 4px solid green;
+ }
+
+ .inner.two {
+   right: 0%;
+   top: 0%;
+   animation: rotate-two 0.5s linear infinite;
+   border-right: 4px solid blue;
+ }
+
+ .inner.three {
+   right: 0%;
+   bottom: 0%;
+   animation: rotate-three 0.5s linear infinite;
+   border-top: 4px solid red;
+ }
+
+ #select-2 {
+   display: flex;
+   width: 300px;
+   height: 44px;
+   border-radius: 7px;
+   border: 1px solid #116ACC;
+ }
+
+ @keyframes rotate-one {
+   0% {
+     transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
+   }
+
+
+   100% {
+     transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
+   }
+ }
+
+ @keyframes rotate-two {
+   0% {
+     transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
+   }
+
+   100% {
+     transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
+   }
+ }
+
+ @keyframes rotate-three {
+   0% {
+     transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);
+   }
+
+   100% {
+     transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
+   }
+ }
+
+ .exchangeForm {
+   display: block;
+   width: 90%;
+
+ }
