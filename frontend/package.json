@@ -5,7 +5,7 @@
     "lint:report": "eslint ./",
     "build": "webpack --mode=production --env prod",
     "dev": "webpack serve --mode=development",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
     "@babel/core": "^7.21.4",
