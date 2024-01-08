@@ -141,7 +141,7 @@ export async function Currency() {
   dyn();
 
   function delay() {
-    if (window.location.href.includes('/currency')) {
+    if (window.location.href == 'http://localhost:8080/currency') {
       if (cFfrom.length >= 12) {
         for (let i = 0; i < 12; i++) {
           cFrate[i] = (Math.round(cFrate[i] * 100) / 100).toFixed(2);
@@ -180,6 +180,9 @@ export async function Currency() {
       setChildren(document.body, header, main);
     }
   }
+
+
+
 
   delay();
   menu.classList.remove('none');

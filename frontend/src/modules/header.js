@@ -20,16 +20,16 @@ export const header = el('header.header container', logo, menu);
 router
   .on(`/atm`, () => {
     const atmView = ATM();
-    setChildren(document.body, header, atmView);
+    // setChildren(document.body, header, atmView);
   })
 router.resolve();
 
-// router
-//   .on(`/currency`, () => {
-//     const exchangeView = Currency();
-//     setChildren(document.body, header, exchangeView);
-//   })
-// router.resolve();
+router
+  .on('/currency', () => {
+    const exchangeView = Currency();
+    // setChildren(document.body, header, exchangeView);
+  })
+router.resolve();
 
 router
   .on(`/accounts`, () => {
@@ -37,7 +37,6 @@ router
     // setChildren(document.body, header, exchangeView);
   })
 router.resolve();
-
 
 atmNav.onclick = async (e) => {
   e.preventDefault();
@@ -54,7 +53,6 @@ currencyNav.onclick = async (e) => {
   router.navigate(`/currency`);
 }
 
-
 exitNav.onclick = (e) => {
   e.preventDefault();
   localStorage.removeItem('tokenSave');
@@ -62,5 +60,4 @@ exitNav.onclick = (e) => {
   localStorage.removeItem('accSave');
   localStorage.removeItem('currAccSave');
   router.navigate(`/`);
-
 }

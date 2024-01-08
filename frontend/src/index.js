@@ -61,12 +61,12 @@ for (let i = 0; i < accL; i++) {
     })
 }
 
-router
-  .on(`/currency`, () => {
-    const exchangeView = Currency();
-    setChildren(document.body, header, exchangeView);
-  })
-router.resolve();
+// router
+//   .on(`/currency`, () => {
+//     const exchangeView = Currency();
+//     setChildren(document.body, header, exchangeView);
+//   })
+// router.resolve();
 
 if (accountItemArr) {
   for (let i = 0; i < accountItemArr.length; i++) {
